@@ -5,12 +5,12 @@ export const FETCH_TWEETS_SUCCESS = 'FETCH_TWEETS_SUCCESS'
 export const FETCH_TWEETS_FAILURE = 'FETCH_TWEETS_FAILURE'
 
 export function fetchTweetsByQuery(params, reset) {
-    /*
-    return {
-        type: 'FETCH_TWEETS',
-        payload: axios.get("http://localhost:3030/getTweets"+params)
-    };
-    */
+
+    // return {
+    //     type: 'FETCH_TWEETS',
+    //     payload: axios.get("http://localhost:3030/getTweets"+params)
+    // };
+
 
     return dispatch => {
         dispatch({
@@ -22,8 +22,7 @@ export function fetchTweetsByQuery(params, reset) {
             .then(payload => {
                 dispatch({
                     type: FETCH_TWEETS_SUCCESS,
-                    payload,
-                    reset
+                    payload
                 })
             })
             .catch(error => {

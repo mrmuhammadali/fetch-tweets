@@ -4,11 +4,10 @@ import React from "react";
 import { fetchTweetsByQuery } from '../actions/index';
 import LayoutInner from './LayoutInner';
 
-@connect(({tweets, search_metadata, fetched: tweetsFetched, fetching}) => {
+@connect(({tweets, search_metadata, fetching}) => {
     return {
         tweets,
         search_metadata,
-        tweetsFetched,
         fetching
     };
 })

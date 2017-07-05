@@ -13,8 +13,8 @@ export default class Tweets extends React.Component {
                     return <Tweet key={tweet.id} {...tweet}/>;
                 });
             }
-            catch (e) {
-                console.log(e);
+            catch (err) {
+                console.log(err);
             }
         }
 

@@ -9,14 +9,14 @@ import SearchBar from "./SearchBar"
 import Tweets from "./Tweets";
 
 const LayoutInner = ({
-                         tweets,
-                         searchQuery,
-                         onClickSearch,
-                         onChangeSearchQuery,
-                         onSearchBarKeyPress,
-                         loadMore,
-                         fetching,
-                     }) =>
+        tweets,
+        searchQuery,
+        onClickSearch,
+        onChangeSearchQuery,
+        onSearchBarKeyPress,
+        loadMore,
+        fetching,
+    }) =>
     <div class="container">
         <h1 class="text-center">Search for Twitter Feed</h1>
         <SearchBar
