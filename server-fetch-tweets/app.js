@@ -7,10 +7,9 @@ var app = express();
 app.use(bodyParser.json());
 
 var twitter = new Twit({
-    consumer_key: 'Iwijmt3AYmNKrcYv0ECo81wgb',
-    consumer_secret: 'WBHAAkN0JOh9evaYQ4DX196IKuP2Mh9dFCfzL6Vmb0klYC6dbZ',
-    access_token: '1660448016-lGcMDF8dC7TEmTxCspeozMKaDuLuqMvHXvrw5Fb',
-    access_token_secret: '2NyNSgKfY9jYaoIqz8Qir33hH9cxtx1yPeVQ3Mj9w0yQw'
+    consumer_key: TWITTER_CONSUMER_KEY,
+    consumer_secret: TWITTER_CONSUMER_SECRET',
+    app_only_auth: true
 });
 
 app.get('/getTweets', (req, res) => {
