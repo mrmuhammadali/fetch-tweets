@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 
 var twitter = new Twit({
     consumer_key: TWITTER_CONSUMER_KEY,
-    consumer_secret: TWITTER_CONSUMER_SECRET',
+    consumer_secret: TWITTER_CONSUMER_SECRET,
     app_only_auth: true
 });
 
